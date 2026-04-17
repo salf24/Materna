@@ -1,4 +1,4 @@
-// Materna AI Risk Engine — runs entirely in the browser
+
 const SYMPTOM_W = { Headache:15, Dizziness:15, 'Blurred Vision':20, Swelling:10, Nausea:5, Other:5 }
 
 export const analyzeRisk = ({ systolic, diastolic, heartRate, weight, symptoms=[], medicationTaken }) => {
