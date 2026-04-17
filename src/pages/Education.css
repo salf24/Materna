@@ -1,0 +1,7 @@
+.edu-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.modal-overlay { position:fixed; inset:0; background:rgba(17,24,39,.44); backdrop-filter:blur(5px); z-index:200; display:flex; align-items:flex-end; justify-content:center; padding:16px; }
+.modal-box { background:#fff; border-radius:20px 20px 0 0; width:100%; max-width:600px; max-height:82vh; display:flex; flex-direction:column; overflow:hidden; box-shadow:0 -8px 40px rgba(27,54,93,.14); }
+.modal-head { padding:20px 24px 16px; display:flex; align-items:flex-start; gap:12px; border-bottom:3px solid; flex-shrink:0; }
+.modal-body { padding:20px 24px 36px; overflow-y:auto; flex:1; }
+@media (max-width:600px) { .edu-grid { grid-template-columns:1fr; } }
+@media(max-width:768px){.education-page,.results-page,.history-page,.education-page,.health-entry-page{padding:20px 16px 80px}}

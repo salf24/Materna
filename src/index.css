@@ -1,0 +1,69 @@
+:root {
+  --primary: #1B365D;
+  --accent: #E67E96;
+  --sky: #A3D2E2;
+  --plum: #702F40;
+  --bg: #F9F7F2;
+  --primary-light: #243f6e;
+  --primary-dark: #122543;
+  --accent-light: #f09ab0;
+  --accent-dark: #c9607a;
+  --sky-light: #cce8f2;
+  --sky-dark: #6db8d4;
+  --plum-light: #8f3d51;
+  --plum-dark: #581e2e;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+  --text-on-primary: #ffffff;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --border-light: #f3f4f6;
+  --shadow-sm: 0 1px 3px rgba(27,54,93,0.08), 0 1px 2px rgba(27,54,93,0.04);
+  --shadow-md: 0 4px 12px rgba(27,54,93,0.10), 0 2px 6px rgba(27,54,93,0.06);
+  --shadow-lg: 0 10px 30px rgba(27,54,93,0.12), 0 4px 12px rgba(27,54,93,0.08);
+  --shadow-card: 0 2px 8px rgba(27,54,93,0.07);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --sidebar-width: 260px;
+  --transition: 0.2s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.3; }
+a { text-decoration: none; color: inherit; }
+button { font-family: var(--font-body); cursor: pointer; border: none; outline: none; }
+input, select, textarea { font-family: var(--font-body); outline: none; }
+img { max-width: 100%; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: var(--radius-full); }
+
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.icon-outline { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+#root { display: flex; min-height: 100vh; width: 100%; }
+
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .5; } }

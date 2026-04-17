@@ -1,0 +1,17 @@
+.page-wrap { padding: 28px 32px; max-width: 1060px; margin: 0 auto; width: 100%; }
+.dash-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:24px; }
+.greeting-sub { font-size:0.8rem; color:var(--text-muted); font-weight:500; margin-bottom:4px; }
+.page-title { font-size:1.55rem; font-weight:700; color:var(--primary); line-height:1; }
+.greeting-week { font-size:0.85rem; color:var(--text-secondary); margin-top:4px; font-weight: bold;}
+.icon-btn { width:40px; height:40px; background:#fff; border:1px solid var(--border); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow-sm); transition:all 0.18s; }
+.icon-btn:hover { border-color:var(--accent); }
+.alert-strip { display:flex; align-items:flex-start; gap:12px; background:rgba(112,47,64,0.06); border:1.5px solid var(--plum); border-radius:var(--radius-md); padding:12px 16px; margin-bottom:20px; }
+.dash-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+@media (max-width: 900px) {
+  .page-wrap { padding: 20px 16px 80px; }
+  .dash-grid { grid-template-columns: 1fr; }
+  .dash-grid > *[style*="span 2"] { grid-column: span 1 !important; }
+}
+@media (max-width: 480px) {
+  .page-title { font-size: 1.3rem; }
+}

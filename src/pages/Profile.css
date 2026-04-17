@@ -1,0 +1,20 @@
+.detail-row { display:flex; justify-content:space-between; align-items:center; padding:11px 0; border-bottom:1px solid var(--border-light); gap:16px; }
+.detail-row:last-child { border-bottom:none; }
+.detail-lbl { font-size:0.84rem; color:var(--text-muted); }
+.detail-val { font-size:0.87rem; font-weight:600; color:var(--text-primary); text-align:right; }
+.edit-toggle-btn { display:flex; align-items:center; gap:5px; padding:7px 13px; border-radius:var(--radius-md); border:1.5px solid var(--border); background:#fff; color:var(--text-secondary); font-size:0.82rem; font-weight:600; cursor:pointer; transition:all 0.18s; }
+.edit-toggle-btn:hover { border-color:var(--accent); color:var(--accent); }
+.edit-form { display:flex; flex-direction:column; gap:14px; }
+.edit-field { display:flex; flex-direction:column; gap:6px; }
+.edit-field label { font-size:0.72rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; }
+.edit-input-wrap { display:flex; align-items:center; background:var(--bg); border:1.5px solid var(--border); border-radius:var(--radius-md); overflow:hidden; transition:border-color 0.18s; }
+.edit-input-wrap:focus-within { border-color:var(--accent); box-shadow:0 0 0 3px rgba(230,126,150,0.1); }
+.edit-input-wrap input { flex:1; height:44px; border:none; background:transparent; font-size:0.92rem; color:var(--text-primary); padding:0 12px 0 0; }
+.pref-row { display:flex; justify-content:space-between; align-items:center; padding:12px 0; border-bottom:1px solid var(--border-light); gap:16px; }
+.pref-row:last-child { border-bottom:none; }
+.pref-lbl { font-size:0.87rem; font-weight:600; color:var(--text-primary); }
+.pref-desc { font-size:0.75rem; color:var(--text-muted); margin-top:2px; }
+.tog-sw { width:46px; height:26px; border-radius:99px; background:var(--border); border:none; cursor:pointer; position:relative; transition:background 0.2s; flex-shrink:0; }
+.tog-sw.on { background:var(--accent); }
+.tog-thumb { position:absolute; top:3px; left:3px; width:20px; height:20px; background:#fff; border-radius:50%; transition:transform 0.2s; box-shadow:0 1px 4px rgba(0,0,0,0.15); }
+.tog-sw.on .tog-thumb { transform:translateX(20px); }

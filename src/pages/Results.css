@@ -1,0 +1,4 @@
+.results-page { display:flex; flex-direction:column; gap:14px; }
+@media (max-width:480px) {
+  .results-page > div[style*="grid-template-columns: repeat(4"] { grid-template-columns: repeat(2,1fr) !important; }
+}
